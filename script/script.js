@@ -15,7 +15,7 @@ function showShareOptions(networkLink) {
         customClass: {
             container: 'swal-container', // Classe pour le conteneur de la fenêtre modale
         },
-        
+
     });
 }
 

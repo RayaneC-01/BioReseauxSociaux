@@ -63,8 +63,6 @@ main {
   margin-top: 15px;
 }
 
-
-
 .CopyLink {
   display: flex;
   align-items: center;
@@ -76,7 +74,6 @@ main {
   text-decoration: none;
   color: rgb(24, 151, 219); /*couleur du lien*/
 }
-
 
 @media only screen and (max-width: 800px) {
   .link {
