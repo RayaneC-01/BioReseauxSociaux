@@ -1,6 +1,6 @@
 # Project Name
 
-- **Social Media Links**
+- **Links of Social Media**
 
 ## Description
 
