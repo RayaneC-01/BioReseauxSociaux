@@ -1,3 +1,4 @@
+/* Styles for the body of the page */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -11,6 +12,7 @@ body {
   font-size: 20px;
 }
 
+/* Styles for the main element */
 main {
   display: flex;
   flex-direction: column;
@@ -20,6 +22,7 @@ main {
   margin: 0 auto;
 }
 
+/* Styles for the element with the ID img_logo */
 #img_logo {
   width: 130px;
   height: 110px;
@@ -28,9 +31,10 @@ main {
   margin-bottom: 20px;
 }
 
+/* Styles for elements with the class .link */
 .link {
-  display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
-  align-items: center; /* Aligner les éléments au centre verticalement */
+  display: flex; /* Use flexbox to align elements horizontally */
+  align-items: center; /* Align elements vertically at the center */
   margin-bottom: 10px;
   padding: 20px;
   text-decoration: none;
@@ -42,7 +46,7 @@ main {
 }
 
 .link span {
-  flex: 1; /* Fait en sorte que le texte occupe toute la largeur disponible */
+  flex: 1; /* Make the text occupy the entire available width */
 }
 
 .link i {
@@ -50,19 +54,23 @@ main {
   margin-left: 10px;
 }
 
+/* Styles for the .textp class */
 .textp {
   font-weight: 600;
   margin-top: -20px;
 }
 
+/* Styles for links when hovered */
 .link:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Styles for the element with the ID links-container */
 #links-container {
   margin-top: 15px;
 }
 
+/* Styles for the .CopyLink class and its descendants */
 .CopyLink {
   display: flex;
   align-items: center;
@@ -70,15 +78,26 @@ main {
 
 .CopyLink a {
   flex: 1;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
-  color: rgb(24, 151, 219); /*couleur du lien*/
+  color: rgb(24, 151, 219); /* Link color */
 }
 
+/* Media query for screens with a maximum width of 800 pixels */
 @media only screen and (max-width: 800px) {
   .link {
-    color: rgb(51, 46, 46);
+    color: rgb(24, 151, 219);
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
+  }
+  .link i {
+    font-size: 3.5vw;
+    margin-left: 1vw;
+  }
+  #img_logo {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%;
+    margin-top: 25px;
   }
 }
